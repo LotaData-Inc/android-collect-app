@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+		  package="com.lotadata.geocollect">
+
+	<application
+		android:allowBackup="false"
+		android:icon="@drawable/lotadata_icon_pink_new_512"
+		android:label="@string/app_name"
+		android:supportsRtl="true"
+		android:theme="@style/AppTheme">
+
+		<meta-data
+			android:name="com.google.android.awareness.API_KEY"
+			android:value="@string/google_play_services_key" />
+		<meta-data
+			android:name="com.google.android.geo.API_KEY"
+			android:value="@string/google_play_services_key" />
+		<meta-data
+			android:name="com.google.android.nearby.messages.API_KEY"
+			android:value="@string/google_play_services_key" />
+
+		<meta-data
+			android:name="com.google.android.gms.version"
+			android:value="@integer/google_play_services_version" />
+
+		<meta-data
+			android:name="com.lotadata.moments.ENABLE_CONTEXT_AWARE"
+			android:value="true" />
+
+		<meta-data
+			android:name="com.lotadata.moments.KEEP_SERVICE"
+			android:value="true" />
+
+		<meta-data
+			android:name="com.lotadata.moments.FOREGROUND_ONLY"
+			android:value="false" />
+
+		<activity android:name="com.lotadata.geocollect.presentation.SDKActivity">
+			<intent-filter>
+				<action android:name="android.intent.action.MAIN"/>
+				<category android:name="android.intent.category.LAUNCHER"/>
+			</intent-filter>
+		</activity>
+	</application>
+
+</manifest>
